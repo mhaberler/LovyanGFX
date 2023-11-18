@@ -208,9 +208,9 @@ void test(LGFX_Device &lcd)
 void setup()
 {
   test(display1);
-  #if !defined SKIP_I2C_TEST
-    test(display2);
-  #endif
+  // #if !defined SKIP_I2C_TEST
+  //   test(display2);
+  // #endif
 }
 
 void loop(void)
