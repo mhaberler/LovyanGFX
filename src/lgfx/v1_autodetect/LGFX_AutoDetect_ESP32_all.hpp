@@ -85,6 +85,8 @@ namespace lgfx
       // _cfg.pin_cs = GPIO_NUM_3;
       _cfg.invert = true;
       _cfg.offset_rotation = 3;
+      // https://github.com/lovyan03/LovyanGFX/issues/513#issuecomment-2023220828
+      _cfg.bus_shared = true;    // Set to true when sharing the bus with sd card (bus control is performed with drawJpgFile, etc.)
 
       _rotation = 1; // default rotation
     }
